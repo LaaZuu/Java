@@ -118,3 +118,11 @@ abstract class Account {
     }
 
 }
+class regAccount extends Account{
+    public regAccount(String n,int b, String t, boolean p) {
+        num = n;
+        balance = b;
+        type = t;
+        canPay =  p;
+    }
+}
