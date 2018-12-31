@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="190dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="77dp"
+        android:layout_marginEnd="96dp"
+        android:layout_marginRight="96dp"
+        android:onClick="openAddAcc"
+        android:text="Lisää tili" />
+
+    <Button
+        android:id="@+id/button4"
+        android:layout_width="190dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="19dp"
+        android:layout_marginEnd="96dp"
+        android:layout_marginRight="96dp"
+        android:onClick="openInfo"
+        android:text="Muokkaa tietoja" />
+
+    <Button
+        android:id="@+id/button8"
+        android:layout_width="193dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="197dp"
+        android:layout_marginEnd="93dp"
+        android:layout_marginRight="93dp"
+        android:onClick="openAddCard"
+        android:text="Lisää kortti tiliin" />
+
+    <Button
+        android:id="@+id/button11"
+        android:layout_width="196dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="259dp"
+        android:layout_marginEnd="95dp"
+        android:layout_marginRight="95dp"
+        android:onClick="openEditCard"
+        android:text="Muokkaa kortteja" />
+
+    <Button
+        android:id="@+id/button13"
+        android:layout_width="191dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="135dp"
+        android:layout_marginEnd="95dp"
+        android:layout_marginRight="95dp"
+        android:onClick="openEditAcc"
+        android:text="Muokkaa tilejä" />
+
+    <Button
+        android:id="@+id/button16"
+        android:layout_width="202dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="316dp"
+        android:layout_marginEnd="94dp"
+        android:layout_marginRight="94dp"
+        android:onClick="openTransactions"
+        android:text="Suorita tilitapahtuma" />
+
+    <Button
+        android:id="@+id/button20"
+        android:layout_width="197dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="373dp"
+        android:layout_marginEnd="95dp"
+        android:layout_marginRight="95dp"
+        android:onClick="openDeposit"
+        android:text="Tee talletus" />
+
+    <Button
+        android:id="@+id/button23"
+        android:layout_width="196dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="430dp"
+        android:layout_marginRight="94dp"
+        android:onClick="openEntries"
+        android:text="Tarkastele tilitapahtumia" />
+
+</RelativeLayout>

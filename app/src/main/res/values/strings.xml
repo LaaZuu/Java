@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">Bank app</string>
+    <string name="button_send">Send</string>
+    <string name="welcome_msg">Welcome!</string>
+</resources>
