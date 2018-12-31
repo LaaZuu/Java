@@ -13,6 +13,7 @@ import java.io.Writer;
 import java.util.ArrayList;
 
 public class EntryToJson {
+    /*Turns AccountEntry objects into json*/
     public EntryToJson(){
         AccountEntry entry;
         Account acc;

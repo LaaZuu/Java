@@ -23,6 +23,7 @@ public class AccountEntry {
         accountFrom = accFrom;
         accountTo = accTo;
     }
+    /*Parses information from AccountTEntry objects into readable form*/
     public String getInfo() {
 
         if (accountTo.equals("-1")) {

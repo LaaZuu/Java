@@ -30,6 +30,7 @@ public class editAcc extends AppCompatActivity {
 
 
     }
+    /*Takes information from gui and edits account information accordingly*/
     public void editAcc(View v){
         Account acc = Bank.getInstance().findAccount(String.valueOf(s1.getSelectedItem()));
         canPayBool = (CheckBox)findViewById(R.id.checkBox3);

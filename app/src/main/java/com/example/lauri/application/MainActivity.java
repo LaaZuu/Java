@@ -23,6 +23,7 @@ public class MainActivity extends AppCompatActivity {
 
 
     }
+    /*Every method below this is an activity opener (different gui window)*/
     public void openAddAcc(View v) {
         Intent intent = new Intent(this, addAcc.class);
         startActivity(intent);

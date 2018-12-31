@@ -28,6 +28,7 @@ public class Info extends AppCompatActivity {
         addressField.setText(address);
         phoneField.setText(phone);
     }
+    /*Sets user info*/
     public void saveEdit(View v){
         User.getInstance().edit(nameField.getText().toString(),addressField.getText().toString(),phoneField.getText().toString());
     }

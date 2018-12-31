@@ -26,6 +26,7 @@ public class addAcc extends AppCompatActivity {
         Intent intent = new Intent(this, MainActivity.class);
         startActivity(intent);
     }
+    /*Takes information from gui and adds an account*/
     public void addAccount(View v){
         num = (EditText)findViewById(R.id.editText);
         String accNum = num.getText().toString();

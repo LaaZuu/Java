@@ -46,7 +46,7 @@ public class Transactions extends AppCompatActivity implements AdapterView.OnIte
     @Override
     public void onNothingSelected(AdapterView<?> arg0) {
     }
-
+    /*Withdraws money from account according to information given in gui*/
     public void withdrawal(View v){
         ammountWithPay = (EditText)findViewById(R.id.editText13);
         int withdrawAmmount = Integer.parseInt(ammountWithPay.getText().toString());
@@ -59,6 +59,7 @@ public class Transactions extends AppCompatActivity implements AdapterView.OnIte
             Toast.makeText(this,"Noston suuruus ylitti kortin nostorajan. Nosto epäonnistui.", Toast.LENGTH_LONG).show();
         }
     }
+    /*Makes a payment from given account's card*/
     public void payment(View v){
         ammountWithPay = (EditText)findViewById(R.id.editText13);
         int withdrawAmmount = Integer.parseInt(ammountWithPay.getText().toString());
@@ -73,6 +74,7 @@ public class Transactions extends AppCompatActivity implements AdapterView.OnIte
             Toast.makeText(this,"Tililtä ei voi suorittaa maksua.", Toast.LENGTH_LONG).show();
         }
     }
+    /*Transfers money from one account to another*/
     public void transfer(View v) {
         recipient = (EditText)findViewById(R.id.editText11);
         transferAmount = (EditText)findViewById(R.id.editText12);

@@ -25,9 +25,10 @@ public class EditCard extends AppCompatActivity implements AdapterView.OnItemSel
         adapter.setDropDownViewResource(R.layout.support_simple_spinner_dropdown_item);
         s1 = (Spinner)findViewById(R.id.spinner2);
         s2 = (Spinner)findViewById(R.id.spinner3);
-        s1.setAdapter(adapter);
+        s1.setAdapter(adapter); // Populates first spinner
         s1.setOnItemSelectedListener(this);
     }
+    /*Populates second spinner dynamically depending on spinner 1*/
     @Override
     public void onItemSelected(AdapterView<?> a, View v, int i, long l){
         String sp1 = String.valueOf(s1.getSelectedItem());
@@ -41,7 +42,7 @@ public class EditCard extends AppCompatActivity implements AdapterView.OnItemSel
     @Override
     public void onNothingSelected(AdapterView<?> arg0) {
     }
-
+    /*Takes information from gui and edits card accordingly*/
     public void editCard(View v) {
          withdrawalLimit= (EditText)findViewById(R.id.editText8);
          paymentLimit= (EditText)findViewById(R.id.editText8);

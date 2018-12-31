@@ -14,7 +14,7 @@ abstract class Account {
     ArrayList<AccountEntry> entryList = new ArrayList();
     private int cards = 0;
 
-
+    /*Takes money from the account*/
     protected boolean take(int x) {
         if (x < balance) {
             balance -= x;
@@ -35,6 +35,7 @@ abstract class Account {
     public void addEntry(String type, int amount, String accFrom, String accTo){
         entryList.add(new AccountEntry(type, amount, accFrom, accTo));
     }
+    /*Returns accounts card id numbers in a list*/
     public ArrayList<Integer> getAllCards() {
         ArrayList<Integer> cardNums = new ArrayList();
         if (cardList.isEmpty()) {
@@ -47,6 +48,7 @@ abstract class Account {
             return cardNums;
         }
     }
+    /*Returns all account entries in a readable form*/
     public ArrayList<String> getAllEntries() {
         ArrayList<String> accountEntries = new ArrayList();
         if (entryList.isEmpty()) {
@@ -59,6 +61,7 @@ abstract class Account {
             return accountEntries;
         }
     }
+    /* Returns a list of AccountEntry objects for json reasons*/
     public ArrayList<AccountEntry> getEntryObjects(){
         ArrayList<AccountEntry> accountEntries = new ArrayList();
         if (entryList.isEmpty()) {
@@ -71,6 +74,7 @@ abstract class Account {
             return accountEntries;
         }
     }
+    /*Searches for card by id and returns the object, if not found returns empty card*/
     public Card findCard(int x) {
         Card card;
         if (cardList.isEmpty()) {
@@ -90,7 +94,7 @@ abstract class Account {
         }
         return new Card(0,0,false,0);
     }
-
+    /*Adds money to the account*/
     protected void deposit(int x) {
         balance += x;
     }
@@ -113,12 +117,4 @@ abstract class Account {
         canPay = newCanPay;
     }
 
-}
-class regAccount extends Account{
-    public regAccount(String n,int b, String t, boolean p) {
-        num = n;
-        balance = b;
-        type = t;
-        canPay =  p;
-    }
 }

@@ -22,9 +22,10 @@ public class Entries extends AppCompatActivity implements AdapterView.OnItemSele
                 this,R.layout.support_simple_spinner_dropdown_item,spinnerArray);
         adapter.setDropDownViewResource(R.layout.support_simple_spinner_dropdown_item);
         s1 = (Spinner)findViewById(R.id.spinner9);
-        s1.setAdapter(adapter);
+        s1.setAdapter(adapter);     //Populates spinner
         s1.setOnItemSelectedListener(this);
     }
+    /*Populates ListView dynamically depending on spinner*/
     @Override
     public void onItemSelected(AdapterView<?> a, View v, int i, long l){
         String sp1 = String.valueOf(s1.getSelectedItem());

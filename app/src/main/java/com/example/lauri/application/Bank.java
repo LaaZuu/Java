@@ -14,6 +14,7 @@ public class Bank {
         accounts += 1;
         System.out.println("Account added.");
     }
+    /*Returns a list of all the accounts' numbers*/
     public ArrayList<String> getAllAccounts() {
         System.out.println("Kaikki tilit:");
         ArrayList<String> accountNums = new ArrayList();
@@ -77,6 +78,7 @@ public class Bank {
             return 2;
         }
     }
+    /*Transfers money from one account to another, logs said transaction as entries in both accounts*/
     public int transfer(String from, String to, int amount){
         Account accFrom = findAccount(from);
         Account accTo = findAccount(to);
