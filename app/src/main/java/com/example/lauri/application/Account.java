@@ -125,4 +125,4 @@ class regAccount extends Account{
         type = t;
         canPay =  p;
     }
-}
+}//
